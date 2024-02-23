@@ -1,16 +1,33 @@
 package com.testing_java.java_testing;
 
 import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class StringUtilTest {
 
     @Test
-    public void testRepear(){
+    public void repeatStringOnce(){
         String result=StringUtil.repeat("hola", 3);
         Assert.assertEquals("holaholahola", result);
+    }
 
-        String result2=StringUtil.repeat("hola",1);
-        Assert.assertEquals("hola", result2);
+    @Test
+    public void repeatStringMultipleTimes(){
+        String result=StringUtil.repeat("hola",1);
+        Assert.assertEquals("hola", result);
+    }
+
+    @Test
+    public void repeatStringZeroTimes(){
+        String result=StringUtil.repeat("hola",0);
+        Assert.assertEquals("", result);
+    }
+
+    @Test()
+    public void repeatStringNegativeTimes(){
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            StringUtil.repeat("hola", -1);
+        });
     }
 }

@@ -9,3 +9,7 @@
 3. Ir a la pagina de Mavel y buscar: JUnit
 
 4. Agregar la libreria en el archivo: pom.xml
+
+5. Crear la clase PasswordUtil
+
+6. Generar el archivo de testing para la clase PasswordUtil
