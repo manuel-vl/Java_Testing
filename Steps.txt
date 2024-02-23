@@ -1,0 +1,5 @@
+** Primeros Pasos **
+
+1. Crear la case StringUtil
+
+2. Dentro de la clase apretar Command + N y seleccionar crear Test 
