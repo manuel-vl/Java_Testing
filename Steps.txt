@@ -2,4 +2,10 @@
 
 1. Crear la case StringUtil
 
-2. Dentro de la clase apretar Command + N y seleccionar crear Test 
+2. Dentro de la clase apretar Command + N y seleccionar crear Test
+
+** Test Unitario con JUnit **
+
+3. Ir a la pagina de Mavel y buscar: JUnit
+
+4. Agregar la libreria en el archivo: pom.xml
