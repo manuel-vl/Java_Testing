@@ -1,6 +1,7 @@
 package com.testing_java.java_testing;
 
-import org.junit.Assert;
+import com.testing_java.java_testing.Exercise3.Dado;
+import com.testing_java.java_testing.Exercise3.Player;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 

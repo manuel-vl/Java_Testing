@@ -1,4 +1,4 @@
-package com.testing_java.java_testing;
+package com.testing_java.java_testing.Exercise3;
 
 import java.util.Random;
 

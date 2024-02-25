@@ -25,3 +25,13 @@
 10. Crear la clase Dado
 
 11. Generar el archivo de testing para la clase Player
+
+12. Crear la interface PaymentGateway
+
+13. Crear la clase PaymentResponse
+
+14. Crear la clase PaymentRequest
+
+15. Crear la clase PaymentProcessor
+
+16. Generar el archivo de testing para la clase PaymentProcessor

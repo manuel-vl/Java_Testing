@@ -1,4 +1,4 @@
-package com.testing_java.java_testing;
+package com.testing_java.java_testing.Exercise2;
 
 public class PasswordUtil {
     public enum SecurityLevel{

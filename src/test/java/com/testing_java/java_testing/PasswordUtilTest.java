@@ -1,7 +1,7 @@
 package com.testing_java.java_testing;
 
+import com.testing_java.java_testing.Exercise2.PasswordUtil;
 import org.junit.Assert;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
