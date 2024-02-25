@@ -1,4 +1,4 @@
-package com.testing_java.java_testing;
+package com.testing_java.java_testing.Exercise1;
 
 import com.testing_java.java_testing.Exercise1.StringUtil;
 import org.junit.Assert;

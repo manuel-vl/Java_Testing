@@ -28,7 +28,7 @@ class PaymentProcessorTest {
         // SIEMPRE que se ejecute requestPayment retorna OK
         Mockito.when(paymentGateway.requestPayment(Mockito.any()))
                 .thenReturn(new PaymentResponse(PaymentResponse.PaymentStatus.OK));
-        
+
         // ACT
         boolean result= paymentProcessor.makePayment(1000.0);
 
