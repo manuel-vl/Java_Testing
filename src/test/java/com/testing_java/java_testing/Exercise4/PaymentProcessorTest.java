@@ -1,6 +1,7 @@
 package com.testing_java.java_testing.Exercise4;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -8,33 +9,44 @@ import org.mockito.Mockito;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PaymentProcessorTest {
+    private  PaymentGateway paymentGateway;
+    private PaymentProcessor paymentProcessor;
+
+    // Indicando que tiene que ejecutar este metodo antes de un test
+    @Before
+    public void setup(){
+        // PaymentGateway es una interface, por ende simulamos con mockito
+        paymentGateway= Mockito.mock(PaymentGateway.class);
+
+        paymentProcessor=new PaymentProcessor(paymentGateway);
+    }
+
     @Test
     void payment_correct() {
-        // PaymentGateway es una interface, por ende simulamos con mockito
-        PaymentGateway paymentGateway= Mockito.mock(PaymentGateway.class);
+        // ARRANGE
         // Simulamos que al requestPayment le enviamos cualquier cosa y retorna un PaymentResponse OK
         // SIEMPRE que se ejecute requestPayment retorna OK
         Mockito.when(paymentGateway.requestPayment(Mockito.any()))
                 .thenReturn(new PaymentResponse(PaymentResponse.PaymentStatus.OK));
-
-        PaymentProcessor paymentProcessor=new PaymentProcessor(paymentGateway);
-
+        
+        // ACT
         boolean result= paymentProcessor.makePayment(1000.0);
 
+        // ASSERT
         Assertions.assertEquals(true, result);
     }
 
     @Test
     void payment_wrong() {
-        PaymentGateway paymentGateway=Mockito.mock(PaymentGateway.class);
+        // ARRANGE
         // SIEMPRE que se ejecute requestPayment retorna ERROR
         Mockito.when(paymentGateway.requestPayment(Mockito.any()))
                 .thenReturn(new PaymentResponse(PaymentResponse.PaymentStatus.ERROR));
 
-        PaymentProcessor paymentProcessor=new PaymentProcessor(paymentGateway);
-
+        // ACT
         boolean result=paymentProcessor.makePayment(1000.0);
 
+        // ASSERT
         Assertions.assertEquals(false, result);
     }
 }
