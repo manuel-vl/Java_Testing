@@ -1,6 +1,7 @@
-package com.testing_java.java_testing.Exercise2;
+package com.testing_java.java_testing.Unitarias.Exercise2;
 
 public class PasswordUtil {
+    // Unitarias sin mock
     public enum SecurityLevel{
         WEAK, MEDIUM, STRONG
     }

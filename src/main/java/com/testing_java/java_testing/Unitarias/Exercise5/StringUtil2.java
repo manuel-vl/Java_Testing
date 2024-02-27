@@ -1,4 +1,4 @@
-package com.testing_java.java_testing.Exercise5;
+package com.testing_java.java_testing.Unitarias.Exercise5;
 
 public class StringUtil2 {
     private String text;

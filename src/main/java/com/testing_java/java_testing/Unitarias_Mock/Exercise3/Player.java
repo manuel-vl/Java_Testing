@@ -1,6 +1,4 @@
-package com.testing_java.java_testing.Exercise3;
-
-import com.testing_java.java_testing.Exercise3.Dado;
+package com.testing_java.java_testing.Unitarias_Mock.Exercise3;
 
 public class Player {
     private Integer minNumberToWin;

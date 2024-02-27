@@ -1,4 +1,4 @@
-package com.testing_java.java_testing.Exercise4;
+package com.testing_java.java_testing.Unitarias_Mock.Exercise4;
 
 public class PaymentResponse {
     enum PaymentStatus{

@@ -1,9 +1,8 @@
-package com.testing_java.java_testing.Exercise5;
+package com.testing_java.java_testing.Unitarias.Exercise5;
 
+import com.testing_java.java_testing.Unitarias.Exercise5.StringUtil2;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class StringUtil2Test {
     @Test

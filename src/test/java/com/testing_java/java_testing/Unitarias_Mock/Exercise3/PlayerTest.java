@@ -1,13 +1,15 @@
-package com.testing_java.java_testing.Exercise3;
+package com.testing_java.java_testing.Unitarias_Mock.Exercise3;
 
-import com.testing_java.java_testing.Exercise3.Dado;
-import com.testing_java.java_testing.Exercise3.Player;
+import com.testing_java.java_testing.Unitarias_Mock.Exercise3.Dado;
+import com.testing_java.java_testing.Unitarias_Mock.Exercise3.Player;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PlayerTest {
+    // Pruebas con mock
+
     // Algunas veces pasa y a veces no, esto es porque el dado arroja un numero aleatorio.
     // Para evitar eso, utilizamos mock para simular el resultado
     @Test

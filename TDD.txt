@@ -1,0 +1,15 @@
+Definicion.
+* Desarrollo guiado por tests.
+* Comenzar escribiendo tests nos ayuda a pensar el diseno.
+* Si escribir el test es dificil quizas el diseno no es adecuado.
+* Al terminar ya tendremos los tests con todos sus beneficios.
+
+Ciclo TDD.
+Red -> Escribir un test que falle
+Green -> Escribir el codigo que lo haga pasar
+Refactor -> Mejorar el codigo
+
+Reglas.
+1. Red: Solo escribiras codigo de test hasta que falle.
+2. Green: Solo escribiras codigo de produccion si es para pasar un test que falla
+3. Refactor: Solo cuando los tests esten pasando

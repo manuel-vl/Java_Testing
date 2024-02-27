@@ -1,15 +1,15 @@
-package com.testing_java.java_testing.Exercise4;
+package com.testing_java.java_testing.Unitarias_Mock.Exercise4;
 
-import org.junit.Assert;
+import com.testing_java.java_testing.Unitarias_Mock.Exercise4.PaymentGateway;
+import com.testing_java.java_testing.Unitarias_Mock.Exercise4.PaymentProcessor;
+import com.testing_java.java_testing.Unitarias_Mock.Exercise4.PaymentResponse;
 import org.junit.Before;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class PaymentProcessorTest {
-    private  PaymentGateway paymentGateway;
+    private PaymentGateway paymentGateway;
     private PaymentProcessor paymentProcessor;
 
     // Indicando que tiene que ejecutar este metodo antes de un test

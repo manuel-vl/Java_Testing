@@ -1,11 +1,12 @@
-package com.testing_java.java_testing.Exercise2;
+package com.testing_java.java_testing.Unitarias.Exercise2;
 
-import com.testing_java.java_testing.Exercise2.PasswordUtil;
+import com.testing_java.java_testing.Unitarias.Exercise2.PasswordUtil;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 
 
 class PasswordUtilTest {
+    // Pruebas sin mock
     @Test
     public void weakWhenHasLessThan8Letters() {
         Assert.assertEquals(PasswordUtil.SecurityLevel.WEAK,PasswordUtil.assessPassword("1234567"));
