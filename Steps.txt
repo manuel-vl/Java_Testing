@@ -35,3 +35,31 @@
 15. Crear la clase PaymentProcessor
 
 16. Generar el archivo de testing para la clase PaymentProcessor
+
+** Test TDD **
+
+17. Crear la clase DateUtil
+
+18. Generar el archivo de testing para la clase DateUtil
+
+19. Crear la clase PriceCalculator
+
+20. Generar el archivo de testing para la clase PriceCalculator
+
+** Proyecto Aplicacion Peliculas **
+
+21. Crear la carpeta: Project_Movies
+
+22. Crear la carpeta: Project_Movies/model
+
+23. Crear la carpeta: Project_Movies/service
+
+24. Crear la carpeta: Project_Movies/data
+
+25. Crea el enum: Project_Movies/model/Genre.java
+
+26. Crea la clase: Project_Movies/model/Movie.java
+
+27. Crear la interface: Project_Movies/data/IMovieRepository.java
+
+28. Crear el servicio: Project_Movies/service/MovieService.java
