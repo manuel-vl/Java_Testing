@@ -63,3 +63,11 @@
 27. Crear la interface: Project_Movies/data/IMovieRepository.java
 
 28. Crear el servicio: Project_Movies/service/MovieService.java
+
+29. Generar el archivo de testing para la clase MovieService
+
+30. Crear la clase: Project_Movies/data/MovieRepositoryImp.java
+
+31. Agregar las librerias: spring-jdbc y h2
+
+32. Generar el archivo de testing para la clase MovieRepositoryImp
